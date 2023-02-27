@@ -1,19 +1,20 @@
 <html>
     <script>
-        let sträng = "Mellanslag 1 2 3 4 5";
+        let sträng = "Mellanslag 1 2 3 4 5"; // Variablar
         let mellanslag = " ";
 
-        function räknaMellanslag(string) {
-            let count = 0;
+        function räknaMellanslag(string) { // Funktion
+            let count = 0; // Variabel som börjar från 0
 
-            for(let ord of sträng.toLowerCase()) {
-                if(mellanslag.includes(ord)) {
+            for(let ord of sträng.toLowerCase()) { // For loop som gör om strängen till lowercased letters
+                if(mellanslag.includes(ord)) { // Kollar ifall strängen innehåller mellanslag isåfall lägg till 1 i countern
                     count++;
                 }
             }
 
-            return count;
+            return count; // Returnerar räknaren
         }
-        console.log(räknaMellanslag(sträng));
+
+        console.log(räknaMellanslag(sträng)); // Kallar på funktionen och konsol loggar värdet
     </script>
 </html>

@@ -1,14 +1,9 @@
 <html>
     <script>
-        let nr1 = 1; // Variablar med nummer
-        let nr2 = 2;
-
-        function calc() { // Funktion som är namged calc
-            let kalkylation = nr1 + nr2; // Variabel som plusar ihop de två givna variablarna
-
-            return console.log(kalkylation); // Returnar värdet till konsolen
+        function calc(nr1, nr2) { // Funktion
+            return nr1 + nr2; // Returnerar summan av talen
         }
-
-        calc(); // Kallar på funktionen
+        
+        console.log(calc(3, 4)); // Kallar på funktionen och konsol loggar och ger nr1 nummret 3 samt nr2 nummret 4
     </script>
 </html>
