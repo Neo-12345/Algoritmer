@@ -1,0 +1,14 @@
+<html>
+    <script>
+        arrayNr = [1, 2, 4, 4, 5, 71, 7, 8, 3, 5, 11, 12, 13, 8, 15]; // Array med nummer
+
+        function calc() { // Funktion
+            arrayNr.sort((a, b) => a - b); // Sorterar arrayen beroende på storlek
+        
+            let mitten = arrayNr[Math.round((arrayNr.length - 1) / 2)]; // Tar längden av arrayen och tar -1 och sedan delar det på 2 och där får vi medianvärdet
+            console.log(mitten); // Konsol loggar mitten
+        }
+
+        calc(arrayNr); // Kallar på funktionen och ger den arrayen
+    </script>
+</html>

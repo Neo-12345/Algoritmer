@@ -1,0 +1,20 @@
+<html>
+    <script>
+        let sträng = "Test"; // En variabel med en sträng
+
+        function palindrom(string) { // Funktion
+            let längd = string.length; // Längden av strängen
+
+            for(let i = 0; i < längd / 2; i++) { // For loop som körs för varje längd av strängen
+                if(string[i] !== string[längd - 1 - i]) { // If sats som kollar ifall sträng längden kan lässas in i palindrom
+                    return "Strängen är palindrom"; // Returnar ifall det är sant eller inte
+                } else {
+                    return "Strängen är inte palindrom";
+                }
+            }
+        }
+        let värde = palindrom(sträng); // En variabel som kallar på funktionen och anger strängen
+
+        console.log(värde); // Konsol loggar värdet
+    </script>
+</html>

@@ -1,0 +1,19 @@
+<html>
+    <script>
+        let vokaler = ["a", "e", "i", "o", "u", "y", "å", "ä", "ö"]; // En array med bokstäver
+        let sträng = "Hello World"; // En variabel som innehåller en string
+
+        function räknaVokaler(string) { // Funktion
+            let count = 0; // En varaibel som har 0 vokaler i början
+
+            for(let ord of sträng.toLowerCase()) { // For loop som gör först om strängen till lowercased letters och döper om strängen till ord
+                if(vokaler.includes(ord)) { // If sats som kollar ifall strängen innehåller vokaler
+                    count++; // Drar upp counten för varje vokal
+                }
+            }
+
+            return count; // Returnerar antalet
+        }
+        console.log(räknaVokaler(sträng)); // Konsolar loggar värder samt kallar på funktionen med strängen
+    </script>
+</html>

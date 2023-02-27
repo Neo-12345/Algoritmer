@@ -1,0 +1,18 @@
+<html>
+    <script>
+        let string = "Hello World!"; // Variabel som innehåller en sträng
+        
+        function reverse(str) { // Funktion
+            let arrayString = str.split(""); // Omvandlar strängen till en array
+
+            let reverseString = arrayString.reverse(); // Reversar strängen
+
+            let joinArray = reverseString.join(""); // Pushar in värdet till joinArray
+
+            return joinArray; // Returnar det bakvända värdet
+        }
+
+        let result = reverse(string); // Variabel som kallar på funktionen och anger strängen till funktionen
+        console.log(result); // Konsol loggar värdet
+    </script>
+</html>

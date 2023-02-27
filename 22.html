@@ -1,0 +1,19 @@
+<html>
+    <script>
+        let sträng = "Mellanslag 1 2 3 4 5";
+        let mellanslag = " ";
+
+        function räknaMellanslag(string) {
+            let count = 0;
+
+            for(let ord of sträng.toLowerCase()) {
+                if(mellanslag.includes(ord)) {
+                    count++;
+                }
+            }
+
+            return count;
+        }
+        console.log(räknaMellanslag(sträng));
+    </script>
+</html>

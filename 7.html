@@ -1,0 +1,13 @@
+<html>
+    <script>
+        let sträng = "Hejsan, programmering är skit kul!"; // En variabel som innehåller en sträng
+
+        function count(string) { // Funktion
+            return string.split(" ").filter(function amount(nummer) { // Räknar antalet mellanslag så får vi hur många ord det finns i strängen
+                return nummer != '' }
+            ).length;
+    
+        }
+        console.log('Ord: ' + count(sträng)); // Konsol loggar antalet ord
+    </script>
+</html>
