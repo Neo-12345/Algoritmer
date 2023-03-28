@@ -1,13 +1,13 @@
 <html>
     <script>
-        let sträng = "Mellanslag 1 2 3 4 5"; // Variablar
-        let mellanslag = " ";
+        let string = "Mellanslag 1 2 3 4 5"; // Variablar
+        let space = " ";
 
-        function räknaMellanslag(string) { // Funktion
+        function countSpaces(string) { // Funktion
             let count = 0; // Variabel som börjar från 0
 
-            for(let ord of sträng.toLowerCase()) { // For loop som gör om strängen till lowercased letters
-                if(mellanslag.includes(ord)) { // Kollar ifall strängen innehåller mellanslag isåfall lägg till 1 i countern
+            for(let word of string.toLowerCase()) { // For loop som gör om strängen till lowercased letters
+                if(space.includes(word)) { // Kollar ifall strängen innehåller mellanslag isåfall lägg till 1 i countern
                     count++;
                 }
             }
@@ -15,6 +15,6 @@
             return count; // Returnerar räknaren
         }
 
-        console.log(räknaMellanslag(sträng)); // Kallar på funktionen och konsol loggar värdet
+        console.log(countSpaces(string)); // Kallar på funktionen och konsol loggar värdet
     </script>
 </html>
